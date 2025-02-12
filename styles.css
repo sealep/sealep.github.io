@@ -18,7 +18,7 @@ html {
   font-size: 96px;
 }
 
-body {
+div {
   margin: 16px;
   background-color: yellow;
   border: 8px black solid;
