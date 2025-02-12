@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  background-color: green;
+}
+
 html {
   margin: 8px;
   background-color: pink;
