@@ -18,8 +18,14 @@ html {
   font-size: 96px;
 }
 
-div {
-  margin: 16px;
-  background-color: yellow;
+body {
+  margin: 20px;
   border: 8px black solid;
+  background-color: grey;
+}
+
+div {
+  
+  background-color: yellow;
+  
 }
