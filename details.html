@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The <details> element.</title>
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   body {
+      padding: 1rem;
+   }
+   summary {
+      font-weight: bold;
+      border: 1px solid #aaaaaa;
+      border-radius: 4px;
+      padding: .5rem;
+   }
+   details {
+      width: 300px;
+   }
+   details[open] > summary {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #aaaaaa;
+   }
+   details[open] > p {
+      padding: 1rem .5rem;
+   }
+   details[open] {
+      border: 1px solid #aaaaaa;
+      border-radius: 4px;
+   }
+   
+   main {
+      display: flex;
+      gap: 1rem;
+   }
+</style>
+<body>
+   <main>
+   <details open name="races">
+      <summary>The AZ48 Half Marathon</summary>
+      <p>
+      The AZ48 half marathon is a flat, fast course that starts
+      and finishes in downtown Chandler. It is USATF-certified this
+      year, which means your PR times will certainly be respected!
+      </p>
+   </details>
+   <details name="races">
+      <summary>The Gilbert Half Marathon</summary>
+      <p>
+      The Gilbert half marathon is a flat course that starts
+      and finishes in Cooley Ranch. It is not USATF-certified. It 
+      contains stretches of rocks and dirt, so run carefully! 
+      </p>
+   </details>
+   <details name="races">
+      <summary>The Mesa Marathon</summary>
+      <p>
+      The Mesa marathon is Phoenix's flagship marathon, which
+      attracts both recreational and elite runners from across
+      the country. After an initial ascent the first few miles, the
+      majority of the course is downhill, providing an opportunity
+      for a Boston qualifier! 
+      </p>
+   </details>
+   </main>
+</body>
+</html>
